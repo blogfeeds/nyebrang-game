@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#" itemscope="itemscope" itemtype="https://schema.org/Game">
+<head>
+<meta charset="utf-8">
+<title>Nyebrang Game - An exciting HTML5 pixel game</title>
+<meta name="last-updated" content="2024-12-26 05:18:24 UTC">
+<meta name="user-signed-in" content="false">
+<meta name="head-cached-at" content="17331454126">
+<meta name="environment" content="production">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://nyebrangame.pages.dev/">
+<link rel="dns-prefetch" href="//nyebrangame.pages.dev">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<meta name="google-site-verification" content="" />
+<meta name="google-adsense-account" content="">
+<meta name="description" content="Play NYEBRANG, an exciting HTML5 pixel adventure that puts your reflexes to the ultimate test!">
+<meta name="keywords" content="nyebrang game, HTML5 game source code, Free HTML game code, HTML5 game portal, Game HTML code, Html games, HTML5 game engine, HTML5 game Tutorial, Game HTML sederhana, Game Pixel PC free, Game pixel Steam gratis, Game pixel PC Offline, Best pixel game Android, Best pixel game PC, Game pixel RPG PC, Download Game Pixel PC, Game pixel RPG Android">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nyebrangame.pages.dev">
+<meta property="og:title" content="Nyebrang Game">
+<meta property="og:image" content="nyebrang.png">
+<meta property="og:description" content="Play NYEBRANG, an exciting HTML5 pixel adventure that puts your reflexes to the ultimate test!">
+<meta property="og:site_name" content="Nyebrang">
+<meta name="twitter:site" content="@superhendy">
+<meta name="twitter:title" content="Nyebrang">
+<meta name="twitter:description" content="Play NYEBRANG, HTML5 pixel adventure that puts your reflexes to the ultimate test!">
+<meta name="twitter:image:src" content="ogimage.jpg">
+<meta name="robots" content="NOODP,INDEX,FOLLOW,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/x-icon" href="nyebrang-icon-512.png">
+<link rel="apple-touch-icon" href="tic-tac-think.png">
+<link rel="apple-touch-icon" sizes="152x152" href="nyebrang-icon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="nyebrang-icon-180.png">
+<link rel="apple-touch-icon" sizes="167x167" href="nyebrang-icon-167.png">
+<link href="nyebrang-icon-192" rel="icon" sizes="192x192">
+<link href="nyebrang-icon-128" rel="icon" sizes="128x128">
+<meta name="apple-mobile-web-app-title" content="Nyebrang">
+<meta name="application-name" content="Nyebrang">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<script type="application/ld+json" class="rank-math-schema">
+ {
+  "@context": "https://schema.org",
+  "@graph": [{
+    "@type": "VideoGame",
+    "@id": "https://nyebrangame.pages.dev/#organization",
+    "name": "Tic Tac Think",
+    "url": "https://nyebrangame.pages.dev/",
+    "logo": {
+      "@type": "ImageObject",
+      "@id": "https://nyebrangame.pages.dev/#logo",
+      "url": "https://nyebrangame.pages.dev/nyebrang-icon-512.png",
+      "contentUrl": "https://nyebrangame.pages.dev/nyebrang-icon-512.png",
+      "caption": "Tic Tac Think",
+      "inLanguage": "en-US",
+      "width": "512",
+      "height": "512"
+    }
+  }, {
+    "@type": "WebSite",
+    "@id": "https://nyebrangame.pages.dev/#website",
+    "url": "https://nyebrangame.pages.dev/",
+    "name": "Tic Tac Think",
+    "alternateName": "TTT",
+    "publisher": {
+      "@id": "https://nyebrangame.pages.dev/#organization"
+    },
+    "inLanguage": "en-US",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://nyebrangame.pages.dev/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "bestRating": "5",
+      "ratingCount": "168"
+    }
+  }, {
+    "@type": "CollectionPage",
+    "@id": "https://nyebrangame.pages.dev/#webpage",
+    "url": "https://nyebrangame.pages.dev/",
+    "name": "Tic Tac Think",
+    "about": {
+      "@id": "https://nyebrangame.pages.dev/#organization"
+    },
+    "isPartOf": {
+      "@id": "https://nyebrangame.pages.dev/#website"
+    },
+    "inLanguage": "en-US"
+  }]
+}
+</script>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f0c2;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+    background: #f8f0c2;
+    padding: 10px;
+    border-radius: 8px;
+    width: 50%; /* Lebar default untuk desktop */
+    margin: 20px auto;
+}
+
+/* Media query untuk perangkat dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Lebar 100% untuk ponsel */
+        margin: 10px 0; /* Mengurangi margin untuk ponsel */
+    }
+}
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #loading {
+            display: none;
+            text-align: center;
+			width:200px;
+        }
+        #output {
+            text-align: center;
+            color: #2E7D32;
+            font-weight: bold;
+        }
+        #output u {
+            text-decoration: underline;
+        }
+        .warning {
+            color: red;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+		.container-contact {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #f8f0c2;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 3);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        button:hover {
+            background-color: #128C7E;
+        }
+        button svg {
+            margin-right: 10px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container-contact {
+            animation: fadeIn 0.5s ease-in;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="https://nyebrangame.pages.dev/">Home</a>
+	 <a href="https://nyebrangame.pages.dev/about">About</a>
+	 	 <a href="https://nyebrangame.pages.dev/privacy">Privacy</a>
+  <a href="https://nyebrangame.pages.dev/disclaimer">Disclaimer</a> 
+<a href="https://nyebrangame.pages.dev/contact">Contact</a>  
+</nav>
+
+<div class="container-contact">
+ <h1>Contact Us</h1>
+        <form class="contactForm id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#FFFFFF">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                </svg>
+                Send to WhatsApp
+            </button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            var name = encodeURIComponent(document.getElementById('name').value);
+            var email = encodeURIComponent(document.getElementById('email').value);
+            var phone = encodeURIComponent(document.getElementById('phone').value);
+            var message = encodeURIComponent(document.getElementById('message').value);
+
+            var whatsappNumber = '085214785236'; // Replace with your WhatsApp number
+            var whatsappMessage = 
+                `Name: ${name}%0A%0A` + 
+                `Email: ${email}%0A%0A` + 
+                `Phone: ${phone}%0A%0A` + 
+                `Message: ${message}`;
+
+            window.open(`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`, '_blank');
+        });
+    </script>
+
+</div>
+	<script type="text/javascript" src="script.js" defer="defer"></script>	
+<script>
+(function() {
+    var devtoolsOpen = false;
+    var threshold = 160;
+
+    // Fungsi untuk me-reload halaman
+    function reloadPage() {
+        window.location.reload();
+    }
+
+    // Mendeteksi CTRL + U
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && (e.key === 'u' || e.keyCode === 85)) {
+            e.preventDefault();
+            reloadPage();
+        }
+    });
+
+    // Mendeteksi View Page Source
+    document.addEventListener('contextmenu', function(e) {
+        if (e.target.nodeName === 'A' && e.target.href.includes('view-source:')) {
+            e.preventDefault();
+            reloadPage();
+        }
+    });
+
+    // Mendeteksi DevTools
+    var checkInterval = setInterval(function() {
+        if ((window.outerWidth - window.innerWidth) > threshold ||
+            (window.outerHeight - window.innerHeight) > threshold) {
+            if (!devtoolsOpen) {
+                devtoolsOpen = true;
+                reloadPage();
+            }
+        } else {
+            if (devtoolsOpen) {
+                devtoolsOpen = false;
+            }
+        }
+    }, 500);
+
+    // Menangani perubahan ukuran jendela untuk mendeteksi DevTools
+    window.addEventListener('resize', function() {
+        if (!devtoolsOpen) {
+            checkInterval = setInterval(function() {
+                if ((window.outerWidth - window.innerWidth) > threshold ||
+                    (window.outerHeight - window.innerHeight) > threshold) {
+                    if (!devtoolsOpen) {
+                        devtoolsOpen = true;
+                        reloadPage();
+                    }
+                } else {
+                    if (devtoolsOpen) {
+                        devtoolsOpen = false;
+                    }
+                }
+            }, 500);
+        }
+    });
+})();
+</script>
+
+</body>
+</html>

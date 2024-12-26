@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#" itemscope="itemscope" itemtype="https://schema.org/Game">
+<head>
+<meta charset="utf-8">
+<title>Nyebrang Game - An exciting HTML5 pixel game</title>
+<meta name="last-updated" content="2024-12-25 17:18:24 UTC">
+<meta name="user-signed-in" content="false">
+<meta name="head-cached-at" content="17331454126">
+<meta name="environment" content="production">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="canonical" href="https://tictacthink.pages.dev/">
+<link rel="dns-prefetch" href="//tictacthink.pages.dev">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<meta name="google-site-verification" content="" />
+<meta name="google-adsense-account" content="">
+<meta name="description" content="Play NYEBRANG, an exciting HTML5 pixel adventure that puts your reflexes to the ultimate test!">
+<meta name="keywords" content="nyebrang game, HTML5 game source code, Free HTML game code, HTML5 game portal, Game HTML code, Html games, HTML5 game engine, HTML5 game Tutorial, Game HTML sederhana, Game Pixel PC free, Game pixel Steam gratis, Game pixel PC Offline, Best pixel game Android, Best pixel game PC, Game pixel RPG PC, Download Game Pixel PC, Game pixel RPG Android">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tictacthink.pages.dev">
+<meta property="og:title" content="Nyebrang Game">
+<meta property="og:image" content="nyebrang.png">
+<meta property="og:description" content="Play NYEBRANG, an exciting HTML5 pixel adventure that puts your reflexes to the ultimate test!">
+<meta property="og:site_name" content="Nyebrang">
+<meta name="twitter:site" content="@superhendy">
+<meta name="twitter:title" content="Nyebrang">
+<meta name="twitter:description" content="Play NYEBRANG, HTML5 pixel adventure that puts your reflexes to the ultimate test!">
+<meta name="twitter:image:src" content="ogimage.jpg">
+<meta name="robots" content="NOODP,INDEX,FOLLOW,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/x-icon" href="nyebrang-icon-512.png">
+<link rel="apple-touch-icon" href="tic-tac-think.png">
+<link rel="apple-touch-icon" sizes="152x152" href="nyebrang-icon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="nyebrang-icon-180.png">
+<link rel="apple-touch-icon" sizes="167x167" href="nyebrang-icon-167.png">
+<link href="nyebrang-icon-192" rel="icon" sizes="192x192">
+<link href="nyebrang-icon-128" rel="icon" sizes="128x128">
+<meta name="apple-mobile-web-app-title" content="Nyebrang">
+<meta name="application-name" content="Nyebrang">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+<script type="application/ld+json" class="rank-math-schema">
+ {
+  "@context": "https://schema.org",
+  "@graph": [{
+    "@type": "VideoGame",
+    "@id": "https://tictacthink.pages.dev/#organization",
+    "name": "Tic Tac Think",
+    "url": "https://tictacthink.pages.dev/",
+    "logo": {
+      "@type": "ImageObject",
+      "@id": "https://tictacthink.pages.dev/#logo",
+      "url": "https://tictacthink.pages.dev/nyebrang-icon-512.png",
+      "contentUrl": "https://tictacthink.pages.dev/nyebrang-icon-512.png",
+      "caption": "Tic Tac Think",
+      "inLanguage": "en-US",
+      "width": "512",
+      "height": "512"
+    }
+  }, {
+    "@type": "WebSite",
+    "@id": "https://tictacthink.pages.dev/#website",
+    "url": "https://tictacthink.pages.dev/",
+    "name": "Tic Tac Think",
+    "alternateName": "TTT",
+    "publisher": {
+      "@id": "https://tictacthink.pages.dev/#organization"
+    },
+    "inLanguage": "en-US",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://tictacthink.pages.dev/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "bestRating": "5",
+      "ratingCount": "168"
+    }
+  }, {
+    "@type": "CollectionPage",
+    "@id": "https://tictacthink.pages.dev/#webpage",
+    "url": "https://tictacthink.pages.dev/",
+    "name": "Tic Tac Think",
+    "about": {
+      "@id": "https://tictacthink.pages.dev/#organization"
+    },
+    "isPartOf": {
+      "@id": "https://tictacthink.pages.dev/#website"
+    },
+    "inLanguage": "en-US"
+  }]
+}
+</script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f0c2;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+    background: #f8f0c2;
+    padding: 10px;
+    border-radius: 8px;
+    width: 50%; /* Lebar default untuk desktop */
+    margin: 20px auto;
+}
+
+/* Media query untuk perangkat dengan lebar maksimum 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 100%; /* Lebar 100% untuk ponsel */
+        margin: 10px 0; /* Mengurangi margin untuk ponsel */
+    }
+}
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #loading {
+            display: none;
+            text-align: center;
+			width:200px;
+        }
+        #output {
+            text-align: center;
+            color: #2E7D32;
+            font-weight: bold;
+        }
+        #output u {
+            text-decoration: underline;
+        }
+        .warning {
+            color: red;
+            font-weight: normal;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="https://gamezz.pages.dev/">Home</a>
+	 <a href="https://gamezz.pages.dev/about">About</a>
+	 	 <a href="https://gamezz.pages.dev/privacy">Privacy</a>
+  <a href="https://gamezz.pages.dev/disclaimer">Disclaimer</a> 
+<a href="https://gamezz.pages.dev/contact">Contact</a> 
+</nav>
+
+<div class="container">
+<h2>Privacy Policy for NYEBRANG GAME</h2>
+<p><strong>Effective Date:</strong> December 26, 2024</p>
+<p>At NYEBRANG GAME, accessible from [your website URL], your privacy is important to us. This Privacy Policy outlines how we collect, use, and protect your information when you play our game.</p>
+<h3>Information We Collect</h3>
+<p>When you play NYEBRANG GAME, we may collect the following types of information:</p>
+<ol>
+<li>
+<p><strong>Personal Information:</strong> We do not collect personal information such as your name, email address, or phone number.</p>
+</li>
+<li>
+<p><strong>Usage Data:</strong> We may collect information about how you access and use the game, including your device type, operating system, IP address, and browser type.</p>
+</li>
+<li>
+<p><strong>Cookies:</strong> Our game may use cookies to enhance user experience. You can set your browser to refuse cookies, but this may affect your ability to play the game.</p>
+</li>
+</ol>
+<h3>How We Use Your Information</h3>
+<p>We use the collected information for the following purposes:</p>
+<ul>
+<li>To improve our game and user experience.</li>
+<li>To analyze gameplay trends and preferences.</li>
+<li>To monitor and analyze usage and activity.</li>
+</ul>
+<h3>Data Security</h3>
+<p>We take the security of your information seriously. We implement reasonable measures to protect your data from unauthorized access, alteration, disclosure, or destruction.</p>
+<h3>Third-Party Services</h3>
+<p>We may use third-party services for analytics and advertising. These services may collect information about your use of our game. We recommend reviewing their privacy policies for more information.</p>
+<h3>Children's Privacy</h3>
+<p>NYEBRANG GAME is not intended for children under the age of 13. We do not knowingly collect personal information from children. If we become aware that we have collected such information, we will take steps to delete it.</p>
+<h3>Changes to This Privacy Policy</h3>
+<p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. We encourage you to review this Privacy Policy periodically for any updates.</p>
+<h3>Contact Us</h3>
+<p>If you have any questions about this Privacy Policy, please contact us at [your email address].</p>
+
+</div>
+
+</body>
+</html>
