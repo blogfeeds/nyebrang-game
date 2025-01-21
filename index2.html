@@ -1,40 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blur Background Example</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .bg-image {
+            /* The image used */
+            background-image: url("https://photo-ht-plus.pbnetcdn.com/assets/content/custom/gallery/5c/48/ff/18e0a47baaf81d8b8ea51eec92/8751/preview-images/14540151/content-hero.jpg?validfrom=1737216338&validto=1737734738&hash=bHAm9wfkiOeH%2BqXTvLxAema2qFI%3D");
+            
+            /* Add the blur effect */
+            filter: blur(20px);
+            -webkit-filter: blur(20px);
+            
+            /* Full height */
+            height: 100%; 
+            
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Position text in the middle of the page/image */
+        .bg-text {
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.1); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            border: 3px solid #f1f1f1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+    background-color: #ff4757; /* Warna latar belakang merah */
+    color: white; /* Warna teks putih */
+    border: none; /* Tanpa border */
+    border-radius: 5px; /* Sudut membulat */
+    padding: 10px 20px; /* Ruang di dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Menunjukkan tombol dapat diklik */
+    transition: background-color 0.3s, transform 0.2s; /* Transisi halus */
 }
 
-.bg {
-  /* The image used */
-  background-image: url("https://i3.wp.com/res.cloudinary.com/glide/image/fetch/https%3A%2F%2Fi.imgur.com%2Fg6w9dYG.jpeg?w=1440&resize=1440,720&ssl=1");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Efek saat tombol di hover */
+button:hover {
+    background-color: #e84118; /* Warna saat hover */
 }
-</style>
+
+/* Efek saat tombol di tekan */
+button:active {
+    transform: scale(0.95); /* Mengurangi ukuran tombol saat ditekan */
+}
+    </style>
 </head>
 <body>
 
-<div class="bg"></div>
+<div class="bg-image"></div>
 
-<p>This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
+<div class="bg-text">
+    <h2>Playboy+ Premium</h2>
+    <h1 style="font-size:50px">JENNY MCCHARTY Nude Pic</h1>
+    <p><button id="unblurButton">See Clear Image</button></p>
+</div>
+
 <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const bgImage = document.querySelector('.bg-image');
+        const button = document.getElementById('unblurButton');
+        const bgText = document.querySelector('.bg-text');
+
+        button.addEventListener('click', function() {
+            bgImage.style.filter = 'blur(0px)';
+            bgImage.style.webkitFilter = 'blur(0px)';
+            bgText.remove(); // Menghapus elemen .bg-text
+        });
+    });
+	document.addEventListener('contextmenu', function(event) {
+    event.preventDefault(); // Menonaktifkan klik kanan
+});
+
+document.addEventListener('keydown', function(event) {
+    // Menonaktifkan Ctrl + U
+    if (event.ctrlKey && event.key === 'u') {
+        event.preventDefault();
+    }
+});
 function openGoogle() {
         // Cek jika sudah dibuka hari ini
         const lastOpened = localStorage.getItem('lastOpened');
         const today = new Date().toISOString().split('T')[0]; // Format YYYY-MM-DD
 
         // Buka Google di tab baru
-        const newTab = window.open('https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://financeapps.biz.id/daily-expenses-2/&ved=2ahUKEwjr5_zU64aLAxXrSmwGHYjAC6gQFnoECC0QAQ&usg=AOvVaw0ySuVq_n_I06v9mtFiVbLg', '_blank');
+        const newTab = window.open('https://www.profitablecpmrate.com/tmx103ad?key=3fe7f6eb823dfc54d69c0d619ccaba11', '_blank');
         // Fokus pada tab baru (jika diizinkan oleh browser)
         if (newTab) {
             newTab.blur(); // Menghilangkan fokus dari tab baru
@@ -47,6 +122,7 @@ function openGoogle() {
 
     // Tambahkan event listener untuk menangkap klik di seluruh halaman
     document.addEventListener('click', openGoogle);
-	</script>
+</script>
+
 </body>
 </html>
